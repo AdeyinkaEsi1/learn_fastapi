@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-import add_router
+from learn_fastapi import trouters
+import learn_fastapi.routers as routers
 app = FastAPI()
-app.include_router(add_router.router)
+app.include_router(trouters.router)
 
 
 
